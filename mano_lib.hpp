@@ -3,7 +3,6 @@
 #include <cmath>
 #include <iomanip>
 #include <vector>
-#include "timer.hpp"
 
 using std::cout;
 using std::cin;
