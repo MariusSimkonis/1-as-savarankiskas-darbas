@@ -1,3 +1,3 @@
 # 1-as-savarankiskas-darbas
 
-Pirma programos versija
+Savarankiško darbo programos versijos.
