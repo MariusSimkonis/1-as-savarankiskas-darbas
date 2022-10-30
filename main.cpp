@@ -1,10 +1,13 @@
 #include "mano_lib.hpp"
 #include "studentas.hpp"
+#include "timer.hpp"
 
 int main() {
   vector<studentas> mas;
   int n, m; char kl = 't';
   string var, pav; vector<int> temp; int egz;
+
+  Timer t;
   
   while (kl=='t' || kl=='T') {
     cout << "Įveskite vardą: "; cin >> var;
@@ -23,6 +26,9 @@ int main() {
     temp.resize(0);
     cout << "Ar vesite dar ? t/n"; cin >> kl;
   }
+  
+  cout << "Sugaišote: " << t.elapsed() << " sekundžiu \n";
+  
   for (studentas laik: mas)
     cout << laik.get_vardas() << " " << laik.get_pavarde() << " " << laik.get_egz() << endl;
 }
